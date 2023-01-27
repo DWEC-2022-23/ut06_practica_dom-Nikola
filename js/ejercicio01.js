@@ -1,12 +1,14 @@
-window.onload()=()=>{
+window.onload=()=>{
 
-
-    let colorr=document.getElementById("color").value;
-    let but=document.getElementById("change");
+    
+    var but=document.getElementById("change");
     
 
     but.addEventListener("click",()=>{
-        document.getElementsByTagName("h1").style.color=colorr;
-    })
-
+        var colorr=document.getElementById("color").value;
+        console.log(colorr);
+        document.getElementById("text").style.color=colorr;
+    });
 }
+
+
