@@ -12,9 +12,16 @@ window.onload=()=>{
 
         let newElem=document.createElement("li");
 
-        newElem.appendChild(elemText);
+        if(elem=""){
+            alert("DEBES DE INTRODUCIR TEXTO")
+        }
+        else{
+            newElem.appendChild(elemText);
 
-        ul.appendChild(newElem);
+            ul.appendChild(newElem);
+        }
+
+
     })
 
     but2.addEventListener("click",()=>{
